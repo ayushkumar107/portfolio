@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Kumar | Software Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Ayush Kumar — Frontend Developer crafting pixel-perfect digital experiences with clean code and great design.">
+    <!-- Google Fonts - Pixel / Monospace -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== CITY SKYLINE BACKGROUND ===== -->
+    <div class="city-skyline" aria-hidden="true"></div>
+
+    <!-- ===== PIXEL AVATAR (Top-Right, Animated) ===== -->
+    <div class="avatar-container" id="avatar-container">
+        <div class="avatar-speech" id="avatar-speech">
+            <span class="speech-text" id="speech-text">Welcome! Scroll down 👇</span>
+        </div>
+        <span class="avatar-plus">+</span>
+        <img src="assets/avatar_0.png" alt="Avatar" class="avatar-sprite" id="avatar-sprite">
+    </div>
+
+    <!-- ===== NAVIGATION (Tab Style) ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-tabs">
+            <a href="#intro" class="nav-tab active" data-section="intro"><span class="nav-text">INTRO</span></a>
+            <a href="#about" class="nav-tab" data-section="about"><span class="nav-text">ABOUT</span></a>
+            <a href="#experience" class="nav-tab" data-section="experience"><span class="nav-text">EXPERIENCE</span></a>
+            <a href="#skills" class="nav-tab" data-section="skills"><span class="nav-text">SKILLS</span></a>
+            <a href="#projects" class="nav-tab" data-section="projects"><span class="nav-text">PROJECTS</span></a>
+            <a href="#contact" class="nav-tab" data-section="contact"><span class="nav-text">CONTACT</span></a>
+        </div>
+    </nav>
+
+    <!-- ===== INTRO SECTION ===== -->
+    <section id="intro" class="section section-intro">
+        <div class="container intro-layout">
+            <div class="intro-text">
+                <h1 class="glitch-title">Hi, I'm Ayush!</h1>
+                <p class="intro-desc">
+                    I can do whatever you need, as long as I'm learning something
+                    or getting paid well enough for my time — preferably both.
+                </p>
+                <p class="intro-cta-label">Don't Have Much Time?</p>
+                <div class="intro-buttons">
+                    <a href="#" class="btn btn-outline" id="resume-btn">VIEW RESUME</a>
+                    <a href="#contact" class="btn btn-accent">HIRE ME</a>
+                </div>
+            </div>
+            <div class="stats-card">
+                <div class="stats-header">
+                    <img src="assets/avatar_0.png" class="stats-avatar" alt="Stats Avatar">
+                    <div>
+                        <span class="stats-name">AYUSH KUMAR</span>
+                        <span class="stats-subtitle">Quick Stats</span>
+                    </div>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-row">
+                        <span class="stat-label">Total Experience</span>
+                        <span class="stat-value">27 <small>months</small></span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Projects</span>
+                        <span class="stat-value">7</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">XP Earned</span>
+                        <span class="stat-value">2400</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">GitHub Stars</span>
+                        <span class="stat-value">120+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION SEPARATOR ===== -->
+    <div class="section-separator"></div>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="section section-about">
+        <div class="container">
+            <h2 class="section-title">LET'S START WITH MY NAME — AYUSH KUMAR</h2>
+            <ul class="about-list">
+                <li>
+                    <strong>What I do?:</strong> Frontend that works, AI stuff, JavaScript + React + Next.js, and sometimes Flutter or websites—depends on mood.
+                </li>
+                <li>
+                    <strong>Prove Your Interest in Coding!:</strong> I build side projects about everything I learn and push them to GitHub. <a href="https://github.com" target="_blank" class="inline-link">Here</a>
+                </li>
+                <li>
+                    <strong>My passions?:</strong> Creating things, solving problems, and chasing new ideas.
+                </li>
+                <li>
+                    <strong>When not coding?:</strong> Gaming, working out, joking around, talking ideas, or questioning life.
+                </li>
+                <li>
+                    <strong>What I care about?:</strong> Learning cool stuff and building things I can flex.
+                </li>
+                <li>
+                    <strong>My coding philosophy?:</strong> Make it work → make it right → make it fast → make it beautiful.
+                </li>
+                <li>
+                    <strong>My weakness?:</strong> Übermensch don't have weaknesses.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ===== SECTION SEPARATOR ===== -->
+    <div class="section-separator"></div>
+
+    <!-- ===== EXPERIENCE SECTION ===== -->
+    <section id="experience" class="section section-experience">
+        <div class="container">
+            <h2 class="section-title">THE GRIND SO FAR</h2>
+            <div class="experience-timeline">
+                <!-- Experience 1 -->
+                <div class="timeline-node">
+                    <div class="timeline-connector">
+                        <div class="connector-dot"></div>
+                        <div class="connector-line"></div>
+                    </div>
+                    <div class="exp-card">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-role">SWE INTERN</h3>
+                                <p class="exp-company">@ TechStartup.AI</p>
+                            </div>
+                            <span class="exp-date">MAR 2026 - PRESENT</span>
+                        </div>
+                        <ul class="exp-tasks">
+                            <li>Working with Infra (K8s, Containers, Terraform, GCP)</li>
+                            <li>Including full stack development with AI</li>
+                        </ul>
+                        <div class="exp-tags">
+                            <span class="exp-tag">PYTHON</span>
+                            <span class="exp-tag">COMMUNICATION SKILLS</span>
+                            <span class="exp-tag">DEVELOPMENT</span>
+                            <span class="exp-tag">LLMS</span>
+                            <span class="exp-tag">TERRAFORM</span>
+                            <span class="exp-tag">GCP</span>
+                            <span class="exp-tag">KUBERNETES</span>
+                        </div>
+                        <span class="exp-level">LEVEL 5</span>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-node">
+                    <div class="timeline-connector">
+                        <div class="connector-dot"></div>
+                        <div class="connector-line"></div>
+                    </div>
+                    <div class="exp-card">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-role">TECHNICAL INTERN</h3>
+                                <p class="exp-company">@ WebAgency Inc.</p>
+                            </div>
+                            <span class="exp-date">JUL 2025 - FEB 2026</span>
+                        </div>
+                        <ul class="exp-tasks">
+                            <li>Built responsive frontends with React & Next.js</li>
+                            <li>Integrated REST APIs and optimized performance</li>
+                        </ul>
+                        <div class="exp-tags">
+                            <span class="exp-tag">REACT</span>
+                            <span class="exp-tag">NEXT.JS</span>
+                            <span class="exp-tag">JAVASCRIPT</span>
+                            <span class="exp-tag">CSS</span>
+                            <span class="exp-tag">GIT</span>
+                        </div>
+                        <span class="exp-level">LEVEL 3</span>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="timeline-node">
+                    <div class="timeline-connector">
+                        <div class="connector-dot"></div>
+                    </div>
+                    <div class="exp-card">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-role">FREELANCE DEVELOPER</h3>
+                                <p class="exp-company">@ Self</p>
+                            </div>
+                            <span class="exp-date">JAN 2025 - JUN 2025</span>
+                        </div>
+                        <ul class="exp-tasks">
+                            <li>Designed and developed portfolio websites for clients</li>
+                            <li>Managed full project lifecycle from wireframes to deploy</li>
+                        </ul>
+                        <div class="exp-tags">
+                            <span class="exp-tag">HTML</span>
+                            <span class="exp-tag">CSS</span>
+                            <span class="exp-tag">JAVASCRIPT</span>
+                            <span class="exp-tag">FIGMA</span>
+                        </div>
+                        <span class="exp-level">LEVEL 1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION SEPARATOR ===== -->
+    <div class="section-separator"></div>
+
+    <!-- ===== SKILLS SECTION (Card Deck) ===== -->
+    <section id="skills" class="section section-skills">
+        <div class="container">
+            <h2 class="section-title">MY SKILL DECK</h2>
+            <div class="skill-deck">
+                <!-- Row 1 -->
+                <div class="skill-card" data-rank="JOKER">
+                    <span class="card-rank top-rank">JOKER</span>
+                    <div class="card-face">⚛️</div>
+                    <span class="card-name">REACT</span>
+                    <span class="card-rank bottom-rank">JOKER</span>
+                </div>
+                <div class="skill-card" data-rank="JOKER">
+                    <span class="card-rank top-rank">JOKER</span>
+                    <div class="card-face">🎨</div>
+                    <span class="card-name">CSS</span>
+                    <span class="card-rank bottom-rank">JOKER</span>
+                </div>
+                <div class="skill-card" data-rank="K">
+                    <span class="card-rank top-rank">K<br>♣</span>
+                    <div class="card-face">🐍</div>
+                    <span class="card-name">PYTHON</span>
+                    <span class="card-rank bottom-rank">K<br>♣</span>
+                </div>
+                <div class="skill-card" data-rank="K">
+                    <span class="card-rank top-rank">K<br>♠</span>
+                    <div class="card-face">⚡</div>
+                    <span class="card-name">RESTAPI</span>
+                    <span class="card-rank bottom-rank">K<br>♠</span>
+                </div>
+                <div class="skill-card" data-rank="Q">
+                    <span class="card-rank top-rank">Q<br>♦</span>
+                    <div class="card-face">🌐</div>
+                    <span class="card-name">NODE JS</span>
+                    <span class="card-rank bottom-rank">Q<br>♦</span>
+                </div>
+                <div class="skill-card" data-rank="J">
+                    <span class="card-rank top-rank">J<br>♥</span>
+                    <div class="card-face">🐳</div>
+                    <span class="card-name">DOCKER</span>
+                    <span class="card-rank bottom-rank">J<br>♥</span>
+                </div>
+                <!-- Row 2 -->
+                <div class="skill-card" data-rank="K">
+                    <span class="card-rank top-rank">K<br>♠</span>
+                    <div class="card-face">📦</div>
+                    <span class="card-name">GIT</span>
+                    <span class="card-rank bottom-rank">K<br>♠</span>
+                </div>
+                <div class="skill-card" data-rank="JOKER">
+                    <span class="card-rank top-rank">JOKER</span>
+                    <div class="card-face">☁️</div>
+                    <span class="card-name">AWS</span>
+                    <span class="card-rank bottom-rank">JOKER</span>
+                </div>
+                <div class="skill-card" data-rank="J">
+                    <span class="card-rank top-rank">J<br>♣</span>
+                    <div class="card-face">🔷</div>
+                    <span class="card-name">GCP</span>
+                    <span class="card-rank bottom-rank">J<br>♣</span>
+                </div>
+                <div class="skill-card" data-rank="Q">
+                    <span class="card-rank top-rank">Q<br>♥</span>
+                    <div class="card-face">🐧</div>
+                    <span class="card-name">FIREBASE</span>
+                    <span class="card-rank bottom-rank">Q<br>♥</span>
+                </div>
+                <div class="skill-card" data-rank="Q">
+                    <span class="card-rank top-rank">Q<br>♦</span>
+                    <div class="card-face">☸️</div>
+                    <span class="card-name">K8S</span>
+                    <span class="card-rank bottom-rank">Q<br>♦</span>
+                </div>
+                <div class="skill-card" data-rank="J">
+                    <span class="card-rank top-rank">J<br>♥</span>
+                    <div class="card-face">🏗️</div>
+                    <span class="card-name">MONGODB</span>
+                    <span class="card-rank bottom-rank">J<br>♥</span>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3.5rem;">
+                <button class="btn btn-accent shuffle-btn" id="shuffle-btn">★ SHUFFLE DECK</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION SEPARATOR ===== -->
+    <div class="section-separator"></div>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects" class="section section-projects">
+        <div class="container">
+            <h2 class="section-title">WHERE DID MY TIME GO?</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card" id="project-1">
+                    <h3 class="project-name">LORE OF AMBITION — GAMING BACKEND</h3>
+                    <p class="project-desc">A FastAPI-based backend with JWT security, Redis caching, Celery workers, and CI/CD for low-latency gaming leaderboards.</p>
+                    <a href="#" class="btn btn-sm">VIEW DETAILS</a>
+                </article>
+                <!-- Project 2 -->
+                <article class="project-card" id="project-2">
+                    <h3 class="project-name">SCHOOL SPHERE — SCHOOL MANAGEMENT SYSTEM</h3>
+                    <p class="project-desc">A cross-platform school management system with secure authentication, real-time features, and optimized backend performance.</p>
+                    <a href="#" class="btn btn-sm">VIEW DETAILS</a>
+                </article>
+                <!-- Project 3 -->
+                <article class="project-card" id="project-3">
+                    <h3 class="project-name">STREAMING PLATFORM</h3>
+                    <p class="project-desc">A full-stack streaming platform with secure access, low-latency playback, and analytics-driven discovery.</p>
+                    <a href="#" class="btn btn-sm">VIEW DETAILS</a>
+                </article>
+                <!-- Project 4 -->
+                <article class="project-card" id="project-4">
+                    <h3 class="project-name">DEADFISH — CLI TOOL</h3>
+                    <p class="project-desc">A blazing-fast command-line tool for automated deployment workflows with custom scripting support.</p>
+                    <a href="#" class="btn btn-sm">VIEW DETAILS</a>
+                </article>
+                <!-- Project 5 -->
+                <article class="project-card" id="project-5">
+                    <h3 class="project-name">GESTURE RECOGNITION</h3>
+                    <p class="project-desc">Real-time hand gesture recognition using computer vision and machine learning for touchless interfaces.</p>
+                    <a href="#" class="btn btn-sm">VIEW DETAILS</a>
+                </article>
+                <!-- Project 6 -->
+                <article class="project-card" id="project-6">
+                    <h3 class="project-name">PRISONER'S DILEMMA — AI</h3>
+                    <p class="project-desc">Game theory simulation with AI agents competing in iterated prisoner's dilemma strategies.</p>
+                    <a href="#" class="btn btn-sm">VIEW DETAILS</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SECTION SEPARATOR ===== -->
+    <div class="section-separator"></div>
+
+    <!-- ===== CONTACT / FOOTER SECTION ===== -->
+    <section id="contact" class="section section-contact">
+        <div class="container">
+            <h2 class="section-title">WANT TO WORK TOGETHER?</h2>
+            <p class="contact-text">Drop me a message and let's build something awesome.</p>
+            <div class="contact-links">
+                <a href="mailto:ayush@example.com"  class="contact-link" id="contact-email">
+                    <span class="contact-icon">✉</span> EMAIL
+                </a>
+                <a href="https://github.com/ayushkumar107" target="_blank" class="contact-link" id="contact-github">
+                    <span class="contact-icon">⌨</span> GITHUB
+                </a>
+                <a href="https://www.linkedin.com/in/ayush-kumar-9a161628b/" target="_blank" class="contact-link" id="contact-linkedin">
+                    <span class="contact-icon">💼</span> LINKEDIN
+                </a>
+                <a href="https://twitter.com" target="_blank" class="contact-link" id="contact-twitter">
+                    <span class="contact-icon">🐦</span> TWITTER
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Ayush Kumar. Built with pixels and passion.</p>
+        </div>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="script.js"></script>
+</body>
+</html>

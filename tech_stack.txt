@@ -1,0 +1,34 @@
+PORTFOLIO TECH STACK OVERVIEW
+===================================================
+Below is a breakdown of the technologies used to build this portfolio and how they are implemented across your files.
+
+1. HTML5 (Semantic Structure)
+   - File: index.html
+   - Usage: Provides the skeletal framework for the portfolio using modern semantic tags (<main>, <section>, <nav>, <article>, <footer>). It defines the layout elements for the hero text, the bento-grid skeleton, and placeholder elements for dynamic content.
+
+2. CSS3 (Flexbox/Grid & CSS Variables)
+   - File: style.css
+   - Usage: 
+     * Handles the entire "Glassmorphism" design using backdrop-filters and semi-transparent backgrounds.
+     * Uses CSS Grid (display: grid) to create the modern "bento-style" layout used in the Projects and About sections.
+     * Implements responsive behavior natively via CSS Media Queries (@media), specifically for mobile layouts.
+     * Drives the Light/Dark mode functionality. It defines global CSS Variables (:root and [data-theme="light"]) which are automatically toggled for instant color shifts.
+
+3. Vanilla JavaScript (ES6)
+   - File: script.js
+   - Usage:
+     * Theme Toggling Logic: Checks for and binds a click listener to the Sun/Moon button to alternate CSS variable overrides.
+     * LocalStorage API: Saves the user's preferred theme (Dark or Light mode) to the browser so the preference persists on reload.
+     * Event Listeners: Attaches to the navigation links for smooth-scrolling functionality and intercepts default click behaviors.
+
+4. Lucide Icons (CDN Integration)
+   - File: index.html & script.js
+   - Usage: Pulled dynamically from a Content Delivery Network (unpkg.com). In the HTML, placeholder <i> tags are populated. The script.js file triggers `lucide.createIcons()` to render clean SVGs used for the theme toggle and social media links.
+
+5. Google Fonts (Inter Typography)
+   - File: index.html & style.css
+   - Usage: Loaded via <link> tags in the HTML header, it applies the 'Inter' sans-serif family globally for a high-end, clean technological vibe.
+
+6. Unsplash Placeholder Images (CDN)
+   - File: index.html
+   - Usage: Direct URL integrations serving as fast placeholders for the project cover photos inside the bento-grid cards.

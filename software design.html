@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Design & Metrics - BCA Presentation</title>
+    <style>
+        /* Basic reset and professional typography */
+        * { box-sizing: border-box; }
+        body {
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 40px 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+
+        /* Slide Container - Standard 16:9 Aspect Ratio */
+        .slide {
+            width: 1100px;
+            height: 620px;
+            background-color: #ffffff;
+            margin: 0 auto 40px auto;
+            padding: 50px 70px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            border-top: 6px solid #2c3e50;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 54px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #2980b9;
+            margin-top: 0;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 24px;
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+
+        p, li {
+            font-size: 19px;
+            line-height: 1.6;
+            color: #444;
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-left: 25px;
+            list-style-type: disc;
+        }
+
+        /* Layout Helpers */
+        .content-area {
+            flex-grow: 1;
+        }
+
+        .title-slide-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+        }
+
+        .meta-info {
+            margin-top: 40px;
+            font-size: 22px;
+            color: #7f8c8d;
+        }
+
+        .two-col {
+            display: flex;
+            gap: 40px;
+        }
+
+        .col {
+            flex: 1;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            left: 70px;
+            right: 70px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: #bdc3c7;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+        }
+
+        /* Table Style for comparison */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            font-size: 16px;
+        }
+
+        th {
+            background-color: #f8f9fa;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Slide 1: Title Slide -->
+    <div class="slide">
+        <div class="title-slide-content">
+            <h1>Software Design & Metrics</h1>
+            <div class="meta-info">
+                <p><strong>Presented by:</strong> Your Name</p>
+                <p><strong>Course:</strong> BCA (Bachelor of Computer Applications)</p>
+                <p><strong>Subject:</strong> Software Engineering / Design</p>
+                <p><strong>Date:</strong> [Insert Date Here]</p>
+            </div>
+        </div>
+        <div class="footer"><span>BCA Presentation</span><span>Slide 1</span></div>
+    </div>
+
+    <!-- Slide 2: Introduction -->
+    <div class="slide">
+        <h2>Introduction to Software Design</h2>
+        <div class="content-area">
+            <ul>
+                <li><strong>Definition:</strong> Software design is an iterative process through which requirements are translated into a blueprint for constructing the software.</li>
+                <li><strong>Transition:</strong> It serves as the bridge between the analysis phase (what the system should do) and the implementation phase (how the system is built).</li>
+                <li><strong>Blueprint Aspect:</strong> It focuses on the internal technical structure, including data structures, software architecture, interface representations, and procedural details.</li>
+                <li><strong>Importance:</strong> A well-documented design reduces the risk of errors during coding and simplifies the long-term maintenance of the software.</li>
+            </ul>
+        </div>
+        <div class="footer"><span>Software Design & Metrics</span><span>Slide 2</span></div>
+    </div>
+
+    <!-- Slide 3: Basic Concepts -->
+    <div class="slide">
+        <h2>Basic Concepts of Software Design</h2>
+        <div class="content-area">
+            <div class="two-col">
+                <div class="col">
+                    <ul>
+                        <li><strong>Abstraction:</strong> Dealing with complexity by hiding unnecessary details and emphasizing essential features.</li>
+                        <li><strong>Refinement:</strong> The process of elaboration where high-level descriptions are broken down into detailed instructions.</li>
+                        <li><strong>Modularity:</strong> Dividing software into identifiable and manageable components called modules.</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><strong>Architecture:</strong> The overall structure of the software and the ways in which that structure provides conceptual integrity.</li>
+                        <li><strong>Information Hiding:</strong> Designing modules such that internal data and logic are not accessible to other modules that do not need them.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer"><span>Software Design & Metrics</span><span>Slide 3</span></div>
+    </div>
+
+    <!-- Slide 4: Architectural Design -->
+    <div class="slide">
+        <h2>Architectural Design</h2>
+        <div class="content-area">
+            <p>Architectural design represents the high-level view of the system. It involves identifying the major hardware and software components and their communication paths.</p>
+            <h3>Common Architectural Types:</h3>
+            <ul>
+                <li><strong>Layered Architecture:</strong> Components are organized into layers (e.g., Presentation, Business, and Data layers). Each layer provides services to the one above it.</li>
+                <li><strong>Client-Server:</strong> The system is split into service providers (servers) and service consumers (clients).</li>
+                <li><strong>Microservices:</strong> A modern approach where the application is built as a suite of small, independent services communicating via APIs.</li>
+            </ul>
+        </div>
+        <div class="footer"><span>Software Design & Metrics</span><span>Slide 4</span></div>
+    </div>
+
+    <!-- Slide 5: Low-Level Design (LLD) -->
+    <div class="slide">
+        <h2>Low-Level Design (LLD)</h2>
+        <div class="content-area">
+            <p>While architectural design focuses on the "macro" view, LLD focuses on the "micro" details of the software components.</p>
+            <ul>
+                <li><strong>Detailed Components:</strong> It provides the internal logic for each module identified in the architectural phase.</li>
+                <li><strong>Algorithms:</strong> Developers define the specific step-by-step logic and mathematical formulas required for processing.</li>
+                <li><strong>Data Structures:</strong> Selection of appropriate data types (Stacks, Queues, Linked Lists) to handle data efficiently.</li>
+                <li><strong>Purpose:</strong> To provide enough detail so that a programmer can write the code directly from the design document.</li>
+            </ul>
+        </div>
+        <div class="footer"><span>Software Design & Metrics</span><span>Slide 5</span></div>
+    </div>
+
+    <!-- Slide 6: Modularization -->
+    <div class="slide">
+        <h2>Modularization</h2>
+        <div class="content-area">
+            <p>Modularization is the technique of decomposing a software system into smaller, independent modules.</p>
+            <h3>Core Benefits:</h3>
+            <ul>
+                <li><strong>Easier Maintenance:</strong> Changes in one module are less likely to impact the entire system, making it easier to fix bugs.</li>
+                <li><strong>Reusability:</strong> Individual modules can be used in other projects or different parts of the same project.</li>
+                <li><strong>Manageability:</strong> Large teams can work on different modules simultaneously without interfering with each other's work.</li>
+                <li><strong>Readability:</strong> Smaller sections of code are easier for humans to understand and review.</li>
+            </ul>
+        </div>
+        <div class="footer"><span>Software Design & Metrics</span><span>Slide 6</span></div>
+    </div>
+
+    <!-- Slide 7: Design Structure Charts -->
+    <div class="slide">
+        <h2>Design Structure Charts</h2>
+        <div class="content-area">
+            <p>A Structure Chart is a top-down modular design tool that shows the relation between modules of a software system.</p>
+            <ul>
+                <li><strong>Hierarchy:</strong> It represents the system in a tree-like structure, showing which modules call which sub-modules.</li>
+                <li><strong>Information Flow:</strong> It uses "arrows" and "couples" to show what data and control signals are passed between modules.</li>
+                <li><strong>Organization:</strong> Unlike flowcharts, structure charts show the *organization* of modules rather than the sequence of execution steps.</li>
+                <li><strong>Analysis:</strong> It helps designers identify if a system is too complex or if a module is performing too many tasks.</li>
+            </ul>
+        </div>
+        <div class="footer"><span>Software Design & Metrics</span><span>Slide 7</span></div>
+    </div>
+
+    <!-- Slide 8: Pseudocode & Flowcharts -->
+    <div class="slide">
+        <h2>Pseudocode & Flowcharts</h2>
+        <div class="content-area">
+            <div class="two-col">
+                <div class="col">
+                    <h3>Pseudocode</h3>
+                    <ul>
+                        <li>A high-level description of an algorithm using a combination of English and programming logic.</li>
+                        <li>It ignores syntax and focuses on the logical flow.</li>
+                        <li>Easier for non-programmers to understand the logic.</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Flowcharts</h3>
+                    <ul>
+                        <li>A graphical representation of the sequence of operations in a program.</li>
+                        <li>Uses symbols like diamonds (decisions), rectangles (processes), and ovals (start/end).</li>
+                        <li>Excellent for visualizing conditional branches and loops.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer"><span>Software Design & Metrics</span><span>Slide 8</span></div>
+    </div>
+
+    <!-- Slide 9: Coupling & Cohesion -->
+    <div class="slide">
+        <h2>Coupling & Cohesion</h2>
+        <div class="content-area">
+            <p>These are the two primary metrics used to measure the quality of a software design.</p>
+            <ul>
+                <li><strong>Coupling:</strong> Measures the degree of interdependence between different modules. 
+                    <ul>
+                        <li><em>Goal:</em> **Low Coupling** is desirable so that changes in one module don't break others.</li>
+                    </ul>
+                </li>
+                <li><strong>Cohesion:</strong> Measures the strength of the relationship between elements within a single module.
+                    <ul>
+                        <li><em>Goal:</em> **High Cohesion** is desirable, meaning a module does one specific task and does it well.</li>
+                    </ul>
+                </li>
+                <li><strong>The Ideal Design:</strong> A system with High Cohesion and Low Coupling is considered robust and easy to maintain.</li>
+            </ul>
+        </div>
+        <div class="footer"><span>Software Design & Metrics</span><span>Slide 9</span></div>
+    </div>
+
+    <!-- Slide 10: Design Strategies -->
+    <div class="slide">
+        <h2>Design Strategies</h2>
+        <div class="content-area">
+            <p>Design strategies are systematic approaches to creating a software design. The choice depends on the project size, complexity, and language being used.</p>
+            <ul>
+                <li><strong>Function-Oriented Design:</strong> Focuses on the functions/processes that transform data.</li>
+                <li><strong>Object-Oriented Design:</strong> Focuses on real-world objects and their interactions.</li>
+                <li><strong>Top-Down Strategy:</strong> Starts with the highest level of the system and breaks it down.</li>
+                <li><strong>Bottom-Up Strategy:</strong> Starts with the smallest components and integrates them into a larger system.</li>
+            </ul>
+        </div>
+        <div class="footer"><span>Software Design & Metrics</span><span>Slide 10</span></div>
+    </div>
+
+    <!-- Slide 11: Function-Oriented Design -->
+    <div class="slide">
+        <h2>Function-Oriented Design</h2>
+        <div class="content-area">
+            <ul>
+                <li><strong>Overview:</strong> This approach treats a system as a group of interacting functions. Each function has a specific task.</li>
+                <li><strong>Data Flow:</strong> It relies heavily on Data Flow Diagrams (DFDs) to show how data moves from one process to another.</li>
+                <li><strong>Centralized State:</strong> Often, data is maintained in a centralized state (like a database) and various functions access and modify it.</li>
+                <li><strong>Usage:</strong> Primarily used in procedural programming environments (like C programming).</li>
+                <li><strong>Focus:</strong> What does the system *do*? (The processes).</li>
+            </ul>
+        </div>
+        <div class="footer"><span>Software Design & Metrics</span><span>Slide 11</span></div>
+    </div>
+
+    <!-- Slide 12: Object-Oriented Design (OOD) -->
+    <div class="slide">
+        <h2>Object-Oriented Design (OOD)</h2>
+        <div class="content-area">
+            <ul>
+                <li><strong>Overview:</strong> Based on the concept of "Objects" which represent real-world entities. Objects contain both data (attributes) and methods (behavior).</li>
+                <li><strong>Key Concepts:</strong>
+                    <ul>
+                        <li><strong>Encapsulation:</strong> Bundling data and methods together inside a class.</li>
+                        <li><strong>Inheritance:</strong> Allowing a new class to inherit features from an existing class.</li>
+                        <li><strong>Polymorphism:</strong> Allowing different objects to respond to the same command in different ways.</li>
+                    </ul>
+                </li>
+                <li><strong>Advantage:</strong> Much better for large-scale, complex systems because it mimics real-world logic and promotes reuse.</li>
+            </ul>
+        </div>
+        <div class="footer"><span>Software Design & Metrics</span><span>Slide 12</span></div>
+    </div>
+
+    <!-- Slide 13: Top-Down & Bottom-Up Design -->
+    <div class="slide">
+        <h2>Top-Down & Bottom-Up Design</h2>
+        <div class="content-area">
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>Top-Down Design</th>
+                    <th>Bottom-Up Design</th>
+                </tr>
+                <tr>
+                    <td><strong>Approach</strong></td>
+                    <td>Decomposition (Breaking down)</td>
+                    <td>Composition (Building up)</td>
+                </tr>
+                <tr>
+                    <td><strong>Starting Point</strong></td>
+                    <td>Main system / Abstract level</td>
+                    <td>Lowest level modules / Sub-systems</td>
+                </tr>
+                <tr>
+                    <td><strong>Process</strong></td>
+                    <td>Starts with a global view and identifies sub-components.</td>
+                    <td>Starts with basic components and integrates them.</td>
+                </tr>
+                <tr>
+                    <td><strong>Best For</strong></td>
+                    <td>New projects with clear requirements.</td>
+                    <td>Projects using pre-existing libraries or components.</td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer"><span>Software Design & Metrics</span><span>Slide 13</span></div>
+    </div>
+
+</body>
+</html>
